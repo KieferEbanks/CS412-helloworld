@@ -16,14 +16,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from django.conf import settings
-from django.conf.urls.static import static
+from django.conf import settings # import settings to access static file settings
+from django.conf.urls.static import static # needed to serve static files during development and tells django where to find them
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hw/', include('hw.urls')),
     path('quotes/', include('quotes.urls')),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) # configuring static files serving
+
 
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS[0] if settings.STATICFILES_DIRS else None)

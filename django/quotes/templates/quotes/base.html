@@ -3,9 +3,12 @@
 <!-- Description: The base html template for the quotes app -->
 <!-- The base webpage html template that all other templates extend and use -->
 
+{% load static %} <!-- loading static files for css styling -->
+
 <html>
     <head>
         <title> Base</title>
+        <link rel="stylesheet" href="{% static 'quote_styles.css' %}"> <!-- linking to the static css file for styling -->
     </head>
     <body>
         <nav>
