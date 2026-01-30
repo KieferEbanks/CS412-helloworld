@@ -1,0 +1,109 @@
+body {
+    background-color: #ced0d4;
+    color: #4f4f50;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 0 10%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    color: #22386d;
+}
+
+h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    font-size: 2rem;
+    color: #22386d;
+    padding-bottom: 0.25rem;
+    text-align: center;
+}
+
+h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.35rem;
+    color: #22386d;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1rem;
+    margin: 0.3rem 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+}
+
+td {
+    vertical-align: top;
+    padding: 0.75rem;
+}
+
+img {
+    border-radius: 15px;
+}
+
+a {
+    color: #22386d;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover,
+a:focus {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.name-header {
+    color: #22386d; /* A different shade for the name header */
+}
+
+.intro-table {
+    /* Reduce horizontal padding on table cells to bring image and text closer */
+    width: auto;
+    margin: 0 auto 4rem auto;
+}
+
+.intro-table td {
+    padding: 0.75rem 0.5rem;
+    vertical-align: bottom;
+}
+
+.intro-table td:first-child {
+    padding-right: 0.75rem;
+}
+
+.intro-table td:last-child {
+    padding-left: 0.75rem;
+}
+
+.activities-table td {
+    vertical-align: bottom;
+}
+
+.activities-table img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.intro-table intro-info {
+    font-size: 1.1rem;
+}
+
+h2:first-of-type + p {
+    margin-bottom: 4rem;
+}
+
+.survey-header {
+    color: #000102;
+}
+

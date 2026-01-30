@@ -1,8 +1,16 @@
+<!-- File: about.html -->
+<!-- Author: Kiefer Ebanks (kebanks@bu.edu), 1/29/2026 -->
+<!-- Description: The about page html template for the quotes app -->
+<!-- The html template for the About Tom Brady and myself content to be linked to base.html and displayed -->
+
+{% extends 'quotes/base.html' %} <!-- linking to the base.html template-->
+
 <html>
     <head>
         <title> About</title>
     </head>
     <body>
+        {% block content %} <!-- creating the information that will be subsituted in the base.html template-->
         <h1>Facts about The Goat</h1>
         <ul>
             <li>To start off with the obvious, he won 7 superbowls!</li>
@@ -14,5 +22,6 @@
 
         <h2>This webpage was created by Kiefer Ebanks</h2>
         <p>I am a student at Boston University and this was created for CS412!</p>
+        {% endblock %}
     </body>
 </html>
